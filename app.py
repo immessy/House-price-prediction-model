@@ -14,6 +14,7 @@ def make_prediction(input_data):
     return prediction[0]
 
 # Custom CSS for styling
+st.set_page_config(page_title='Housing Price Prediction', page_icon='🏠', layout='wide')
 st.markdown("""
     <style>
     .main {
@@ -41,7 +42,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Streamlit app
-st.set_page_config(page_title='Housing Price Prediction', page_icon='🏠', layout='wide')
+
 st.title('🏠 Housing Price Prediction')
 st.markdown("""
     <div style='text-align: center; color: #ff6347; font-size: 24px;'>
