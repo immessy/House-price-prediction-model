@@ -1,7 +1,8 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from flask import flask, render_template , request 
+from flask import flask, render_template , request
+from markupsafe import escape
 
 app= flask(__name__)
 # Load the model from the file
