@@ -13,10 +13,41 @@ def make_prediction(input_data):
     prediction = model.predict(data)
     return prediction[0]
 
+# Custom CSS for styling
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f0f2f6;
+    }
+    .sidebar .sidebar-content {
+        background-color: #4b6cb7;
+        color: white;
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #4b6cb7;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Streamlit app
 st.set_page_config(page_title='Housing Price Prediction', page_icon='🏠', layout='wide')
 st.title('🏠 Housing Price Prediction')
-st.markdown("Welcome to the Housing Price Prediction app. Please provide the following details to get the estimated price of the house.")
+st.markdown("""
+    <div style='text-align: center; color: #ff6347; font-size: 24px;'>
+        Welcome to the Housing Price Prediction app! 🎉
+    </div>
+""", unsafe_allow_html=True)
 
 # Use columns for a better layout
 col1, col2 = st.columns(2)
@@ -63,22 +94,11 @@ st.sidebar.info("This app uses a machine learning model to predict the price of 
 
 # Add a footer
 st.markdown("""
-    <style>
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: white;
-        color: black;
-        text-align: center;
-        padding: 10px;
-    }
-    </style>
     <div class="footer">
-        <p>Developed by Your Name. © 2024</p>
+        <p>Developed by Abhinav. © 2024</p>
     </div>
     """, unsafe_allow_html=True)
+
 
 
 
