@@ -49,6 +49,6 @@ input_data = {
 # Make prediction when button is clicked
 if st.button('Predict'):
     prediction = make_prediction(input_data)
-    st.write(f'Predicted Price: {prediction}')
+    st.write(f'Predicted Price: ₹{prediction}')
 
 
