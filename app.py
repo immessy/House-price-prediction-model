@@ -1,10 +1,11 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from flask import flask, render_template , request
+from flask import Flask, render_template, request
 from markupsafe import escape
 
-app= flask(__name__)
+app = Flask(__name__)
+
 # Load the model from the file
 pickle_file = "housing_model.pkl"
 with open(pickle_file, 'rb') as file:
@@ -18,7 +19,7 @@ def make_prediction(input_data):
 
 # Streamlit app
 st.title('Housing Price Prediction')
-#hello
+
 # User inputs
 mainroad = st.selectbox('Mainroad', ['yes', 'no'])
 guestroom = st.selectbox('Guestroom', ['yes', 'no'])
@@ -53,3 +54,5 @@ input_data = {
 if st.button('Predict'):
     prediction = make_prediction(input_data)
     st.write(f'Predicted Price: {prediction}')
+
+
