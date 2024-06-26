@@ -48,7 +48,7 @@ st.title('🏠 Housing Price Prediction')
 col1, col2 = st.columns(2)
 
 with col1:
-    mainroad = st.selectbox('House situated near the Mainroad', ['yes', 'no'])
+    mainroad = st.selectbox('Mainroad', ['yes', 'no'])
     guestroom = st.selectbox('House containing a Guestroom', ['yes', 'no'])
     basement = st.selectbox('House containing a Basement', ['yes', 'no'])
     hotwaterheating = st.selectbox('Hotwaterheating provisions', ['yes', 'no'])
@@ -57,25 +57,25 @@ with col1:
 
 with col2:
     prefarea = st.selectbox('Is the house in your preferred area? ', ['yes', 'no'])
-    furnishingstatus = st.selectbox('Furnishing status of the house', ['furnished', 'semi-furnished', 'unfurnished'])
+    furnishingstatus = st.selectbox('Furnishingstatus of the house', ['furnished', 'semi-furnished', 'unfurnished'])
     bathrooms = st.number_input('no of Bathrooms', min_value=0, max_value=10, step=1)
     stories = st.number_input('no of Stories', min_value=0, max_value=5, step=1)
     area = st.number_input('Area in sqft', min_value=0)
     bedrooms = st.number_input('no of Bedrooms', min_value=0, max_value=10, step=1)
 
 input_data = {
-    'House situated near the Mainroad': mainroad,
-    'House containing a Guestroom': guestroom,
-    'House containing a Basement': basement,
-    'Hot water heating provisions': hotwaterheating,
-    'Airconditioning provisions': airconditioning,
-    'no. of Parking spots': parking,
-    'Is the house in your preferred area?': prefarea,
-    'Furnishing status of the house': furnishingstatus,
-    'no of Bathrooms': bathrooms,
-    'no of Stories': stories,
-    'Area in sqft': area,
-    'no of Bedrooms': bedrooms,
+    'mainroad': mainroad,
+    'guestroom': guestroom,
+    'basement': basement,
+    'hotwaterheating': hotwaterheating,
+    'airconditioning ': airconditioning,
+    'parking': parking,
+    'prefarea': prefarea,
+    'furnishingstatus ': furnishingstatus,
+    'bathrooms': bathrooms,
+    'stories': stories,
+    'area': area,
+    'bedrooms': bedrooms,
 }
 
 # Make prediction when button is clicked
