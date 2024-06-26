@@ -1,8 +1,4 @@
-click==7.1.2
-Flask==1.1.2
 numpy
 pandas==2.2.1
 scikit-learn
 streamlit==1.35.0
-markupsafe==2.1.5
-jinja==3.1.4
