@@ -91,9 +91,7 @@ if st.button('Predict'):
 
 # Add a sidebar
 st.sidebar.title("About")
-st.sidebar.info("This app uses a machine learning model to predict the price of a house based on various features provided by the user. It was built using Streamlit. 
-
-                This app aims to simplify prediction of House prices, with various set questions to narrow down your personalized choice")
+st.sidebar.info("This app uses a machine learning model to predict the price of a house based on various features provided by the user. It was built using Streamlit. --This app aims to simplify prediction of House prices, with various set questions to narrow down your personalized choice")
 st.sidebar.info
 # Add a footer
 st.markdown("""
@@ -105,3 +103,4 @@ st.markdown("""
 
 
 
+ 
