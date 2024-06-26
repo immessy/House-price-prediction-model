@@ -44,12 +44,6 @@ st.markdown("""
 # Streamlit app
 
 st.title('🏠 Housing Price Prediction')
-st.markdown("""
-    <div style='text-align: center; color: #FFFFFF; font-size: 24px;'>
-        Welcome to the Housing Price Prediction website!
-    </div>
-""", unsafe_allow_html=True)
-
 # Use columns for a better layout
 col1, col2 = st.columns(2)
 
@@ -92,7 +86,7 @@ if st.button('Predict'):
 # Add a sidebar
 st.sidebar.title("About")
 st.sidebar.info("This app uses a machine learning model to predict the price of a house based on various features provided by the user. It was built using Streamlit. --This app aims to simplify prediction of House prices, with various set questions to narrow down your personalized choice")
-st.sidebar.info
+
 # Add a footer
 st.markdown("""
     <div class="footer">
