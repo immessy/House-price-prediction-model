@@ -1,10 +1,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from flask import Flask, render_template, request
-from jinja2 import escape
-
-app = Flask(__name__)
 
 # Load the model from the file
 pickle_file = "housing_model.pkl"
