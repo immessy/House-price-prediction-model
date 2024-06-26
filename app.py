@@ -18,7 +18,7 @@ st.set_page_config(page_title='Housing Price Prediction', page_icon='🏠', layo
 st.markdown("""
     <style>
     .main {
-        background-color: #f0f2f6;
+        background-color: #2c2f82;
     }
     .sidebar .sidebar-content {
         background-color: #4b6cb7;
@@ -45,7 +45,7 @@ st.markdown("""
 
 st.title('🏠 Housing Price Prediction')
 st.markdown("""
-    <div style='text-align: center; color: #ff6347; font-size: 24px;'>
+    <div style='text-align: center; color: #eb3210; font-size: 24px;'>
         Welcome to the Housing Price Prediction app! 🎉
     </div>
 """, unsafe_allow_html=True)
